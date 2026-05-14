@@ -1,0 +1,33 @@
+{
+  "name": "Angular Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "postCreateCommand": "npm install -g @angular/cli pnpm && ng config -g cli.packageManager pnpm && pnpm config set minimumReleaseAge 4320 && pnpm config set strictDepBuilds true",
+  "forwardPorts": [4200],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "johnpapa.angular-essentials",
+        "johnpapa.angular2",
+        "johnpapa.vscode-peacock",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint",
+        "bradlc.vscode-tailwindcss",
+        "pranaygp.vscode-css-peek",
+        "naumovs.color-highlight",
+        "usernamehw.errorlens",
+        "yoavbls.pretty-ts-errors",
+        "zignd.html-css-class-completion",
+        "catppuccin.catppuccin-vsc-icons",
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    },
+    "jetbrains": {
+      "plugins": [
+        "AngularJS"
+      ]
+    }
+  }
+}
